@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    background: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+div.container {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "image"
+      "body"
+      "payment"
+      "proceed";
+    background-color: #e0e8ff;
+    border-radius: 12px;
+    margin-top: 4rem;
+    width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+  
+.image { grid-area: image; }
+
+.img {
+    width: 25rem;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+  
+.body {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    text-align: center;
+    justify-self: center;
+    grid-area: body;
+}
+
+h1 {
+    color: #202b4d;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: #8f94a8;
+    margin-bottom: 1rem;
+}
+  
+.payment {  
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: 0.7fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    align-items: center;
+    grid-template-areas:
+      "icon plan change";
+    grid-area: payment;
+    background-color: #f8f9fe;
+    border-radius: 12px;
+    margin: 0 2rem 1.7rem 2rem;
+    padding-right: 1.5rem;
+}
+  
+.icon {
+    align-self: center;
+    grid-area: icon;
+    height: 48px;
+}
+  
+.plan {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "annual"
+      "price";
+    grid-area: plan;
+    align-self: center;
+}
+  
+.annual { 
+    grid-area: annual;
+    font-weight: 800;
+    color: #202b4d;
+}
+  
+.price {
+    color: #8f94a8;
+    grid-area: price; 
+}
+  
+.change {
+    font-weight: 700;
+    color: #524da2;
+    text-decoration: underline;
+    justify-self: end;
+    grid-area: change; 
+}
+
+.change:hover {
+    cursor: pointer;
+    color: #534da28f;
+}
+  
+.proceed {
+    text-align: center;
+    padding: 0 2.1rem 0 2.1rem;
+    grid-area: proceed; 
+}
+
+button {
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 2.6rem;
+    font-size: 0.900rem;
+    font-weight: 700;
+    background-color: #382ae1;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2), 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #392ae188;
+}
+
+.link {
+    font-size: 0.900rem;
+}
+
+.link:hover {
+    color: #1a0ebe;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+footer {
+    font-family: var(--font-lexend);
+    font-weight: 500;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 20px;
+    color: #363434;
+}
+
+@media only screen and (max-width: 600px) {
+    div.container {
+        width: 23rem;
+    }
+    img.img {
+        width: 23rem;
+    }
+}
