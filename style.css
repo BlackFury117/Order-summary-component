@@ -11,16 +11,18 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
-    height: 100vh;
+    min-height: 100vh;
     background: url(https://raw.githubusercontent.com/BlackFury117/Order-summary-component/883c18fb4b26e91a7eb4a8a9369b8bd5df51578e/images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
+    background-size: 100%
+}
+
+main {
+    display: flex;
+    align-items: center;
 }
 
 div.container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr;
