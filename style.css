@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-content: center;
     height: 100vh;
-    background: url(/images/pattern-background-desktop.svg);
+    background: url(https://raw.githubusercontent.com/BlackFury117/Order-summary-component/883c18fb4b26e91a7eb4a8a9369b8bd5df51578e/images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
 }
 
